@@ -109,4 +109,4 @@ hex7seg key1_0(.hex(hex2), .seg7(seg_HEX2));
 hex7seg key1_1(.hex(hex3), .seg7(seg_HEX3));
 hex7seg key0_0(.hex(hex4), .seg7(seg_HEX4));
 hex7seg key0_1(.hex(hex5), .seg7(seg_HEX5));
-endmodule: task4
+endmodule: keyfinder

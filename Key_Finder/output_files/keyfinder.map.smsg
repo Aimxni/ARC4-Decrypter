@@ -1,0 +1,7 @@
+Info (10281): Verilog HDL Declaration information at keyfinder.sv(1): object "KEY" differs only in case from object "key" in the same scope File: C:/Users/aiman/Documents/UBC/CPEN 311/ARC4-Decrypter/keyfinder.sv Line: 1
+Info (10281): Verilog HDL Declaration information at keyfinder.sv(2): object "HEX0" differs only in case from object "hex0" in the same scope File: C:/Users/aiman/Documents/UBC/CPEN 311/ARC4-Decrypter/keyfinder.sv Line: 2
+Info (10281): Verilog HDL Declaration information at keyfinder.sv(2): object "HEX1" differs only in case from object "hex1" in the same scope File: C:/Users/aiman/Documents/UBC/CPEN 311/ARC4-Decrypter/keyfinder.sv Line: 2
+Info (10281): Verilog HDL Declaration information at keyfinder.sv(2): object "HEX2" differs only in case from object "hex2" in the same scope File: C:/Users/aiman/Documents/UBC/CPEN 311/ARC4-Decrypter/keyfinder.sv Line: 2
+Info (10281): Verilog HDL Declaration information at keyfinder.sv(3): object "HEX3" differs only in case from object "hex3" in the same scope File: C:/Users/aiman/Documents/UBC/CPEN 311/ARC4-Decrypter/keyfinder.sv Line: 3
+Info (10281): Verilog HDL Declaration information at keyfinder.sv(3): object "HEX4" differs only in case from object "hex4" in the same scope File: C:/Users/aiman/Documents/UBC/CPEN 311/ARC4-Decrypter/keyfinder.sv Line: 3
+Info (10281): Verilog HDL Declaration information at keyfinder.sv(3): object "HEX5" differs only in case from object "hex5" in the same scope File: C:/Users/aiman/Documents/UBC/CPEN 311/ARC4-Decrypter/keyfinder.sv Line: 3
