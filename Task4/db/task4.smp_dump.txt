@@ -1,0 +1,60 @@
+
+State Machine - |task4|crack:c|state
+Name state.S_DONE_BAD state.S_DONE_GOOD state.S_NEXT_KEY state.S_WAIT_ARC4 state.S_START_ARC4 state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 
+state.S_START_ARC4 0 0 0 0 1 1 
+state.S_WAIT_ARC4 0 0 0 1 0 1 
+state.S_NEXT_KEY 0 0 1 0 0 1 
+state.S_DONE_GOOD 0 1 0 0 0 1 
+state.S_DONE_BAD 1 0 0 0 0 1 
+
+State Machine - |task4|crack:c|arc4:a4|state
+Name state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 
+state.0000 0 0 0 0 0 0 0 
+state.0001 0 0 0 0 0 1 1 
+state.0010 0 0 0 0 1 0 1 
+state.0011 0 0 0 1 0 0 1 
+state.0100 0 0 1 0 0 0 1 
+state.0101 0 1 0 0 0 0 1 
+state.0110 1 0 0 0 0 0 1 
+
+State Machine - |task4|crack:c|arc4:a4|prga:p|state
+Name state.10101 state.10100 state.10011 state.10001 state.01111 state.01110 state.01101 state.01100 state.01011 state.01010 state.01001 state.00111 state.00110 state.00101 state.00100 state.00011 state.00010 state.00001 state.00000 
+state.00000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.00001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.00010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.00011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.00100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.00101 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.00110 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.00111 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.01001 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.01010 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.01011 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.01100 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.01101 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.01110 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.01111 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.10001 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.10011 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.10100 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.10101 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |task4|crack:c|arc4:a4|ksa:k|state
+Name state.1010 state.1001 state.0111 state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 
+state.0001 0 0 0 0 0 0 0 0 1 1 
+state.0010 0 0 0 0 0 0 0 1 0 1 
+state.0011 0 0 0 0 0 0 1 0 0 1 
+state.0100 0 0 0 0 0 1 0 0 0 1 
+state.0101 0 0 0 0 1 0 0 0 0 1 
+state.0110 0 0 0 1 0 0 0 0 0 1 
+state.0111 0 0 1 0 0 0 0 0 0 1 
+state.1001 0 1 0 0 0 0 0 0 0 1 
+state.1010 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |task4|crack:c|arc4:a4|init:i|state
+Name state.00 state.10 state.01 
+state.00 0 0 0 
+state.01 1 0 1 
+state.10 1 1 0 

@@ -1,0 +1,66 @@
+module doublecrack(input logic clk, input logic rst_n,
+             input logic en, output logic rdy,
+             output logic [23:0] key, output logic key_valid,
+             output logic [7:0] ct_addr, input logic [7:0] ct_rddata);
+
+    // your code here
+    
+    // this memory must have the length-prefixed plaintext if key_valid
+    pt_mem pt( /* connect ports */ );
+    logic [23:0] key0, key1;
+    logic valid0, valid1;
+    logic rdy0, rdy1;
+    logic [7:0] ct_addr_0, ct_addr_1;
+    logic [7:0] ct_rddata_0, ct_rddata_1;
+
+    assign ct_addr = 8'd0;
+    assign ct_rddata_0 = ct_rddata;
+    assign ct_rddata_1 = ct_rddata;
+
+    logic en_pulse;
+    always_ff @(posedge clk)begin
+        if(!rst_n)begin
+            en_pulse <= 1'b1;
+        end
+        else begin
+            en_pulse <= 1'b0;
+        end
+    end
+
+    crack c1( 
+        .clk(clk),
+        .rst_n(rst_n),
+        .en(en_pulse),
+        .rdy(rdy_0),
+        .key(key0),
+        .key_valid(valid0),
+        .ct_addr(ct_addr_0),
+        .ct_rddata(ct_rddata_0)
+    );
+
+        crack c2( 
+        .clk(clk),
+        .rst_n(rst_n),
+        .en(en_pulse),
+        .rdy(rdy_1),
+        .key(key1),
+        .key_valid(valid1),
+        .ct_addr(ct_addr_1),
+        .ct_rddata(ct_rddata_1)
+    );
+
+    always_comb begin
+        key_valid = valid0 | valid1;
+        if(valid0)begin
+            key = key0;
+        end
+        else if (valid1)begin
+            key = key1;
+        end
+        default: key = 24'h000000;
+    end
+
+    assign rdy = rdy0 && rdy1;
+
+
+endmodule: doublecrack
